@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/shared/scss/colors.scss';
+
+
+:root {
+  --white: #{$white};
+  --primary-color: #{$primary-color};
+  --primary-color-button: #{$primary-color-button};
+  --primary-color-cancel: #{$primary-color-cancel};
+  --text-box-border-color: #{$text-box-border-color};
+  --error-msg: #{$error-msg};
+}
+
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white) !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.error-msg {
+  color: var(--error-msg);
+  font-size: .8rem;
+}
