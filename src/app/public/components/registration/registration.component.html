@@ -1,0 +1,51 @@
+<form [formGroup]="registrationForm" novalidate>
+    <div class="container">
+        <div>
+            <label><b>Full Name</b></label>
+            <input type="text" id="fullName" placeholder="Enter full name" formControlName="fullName">
+            <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched || isSubmitted)" class="error-msg">
+                <div *ngIf="fullName.errors?.['required']">
+                    Full name is required.
+                </div>
+                <div *ngIf="fullName.errors?.['minlength']">
+                    Full name must be at least 4 characters long.
+                </div>
+            </div>
+        </div>
+        <div>
+            <label><b>Username</b></label>
+            <input type="text" id="username" placeholder="Enter Username" formControlName="username">
+            <div *ngIf="username.invalid && (username.dirty || username.touched || isSubmitted)" class="error-msg">
+                <div *ngIf="username.errors?.['required']">
+                    Username is required.
+                </div>
+                <div *ngIf="username.errors?.['minlength']">
+                    Username must be at least 4 characters long.
+                </div>
+            </div>
+        </div>
+        <div>
+            <label><b>Username</b></label>
+            <input type="text" id="username" placeholder="Enter Username" formControlName="username">
+            <div *ngIf="username.invalid && (username.dirty || username.touched || isSubmitted)" class="error-msg">
+                <div *ngIf="username.errors?.['required']">
+                    Username is required.
+                </div>
+                <div *ngIf="username.errors?.['minlength']">
+                    Username must be at least 4 characters long.
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" formControlName="password">
+            <div *ngIf="password.invalid && (password.dirty || password.touched || isSubmitted)" class="error-msg">
+                <div *ngIf="password.errors?.['required']">
+                    Password is required
+                </div>
+            </div>
+        </div>
+        <button (click)="register()">Login</button>
+    </div>
+    <div class="text-align-center">Don’t have an account? <a class="navigate" (click)="goLogin()">Sign Up</a></div>
+</form>
