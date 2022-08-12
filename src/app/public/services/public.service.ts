@@ -22,4 +22,13 @@ export class PublicService extends BaseService {
     return response;
   }
 
+     /**
+     * Get calling for testing
+     */
+
+  getCoinInfo() {
+    const tempAPIEndPoint = 'https://api.coindesk.com/v1/bpi/currentprice.json';
+    return this.get(tempAPIEndPoint);
+  }
+
 }
