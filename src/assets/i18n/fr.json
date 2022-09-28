@@ -1,0 +1,15 @@
+{
+    "demo": {
+        "title": "Démo de traduction",
+        "text": "Ceci est une simple description",
+        "name": " Nouveau {{name}} !"
+    },
+    "menu": {
+        "company_logo": "Logo d'entreprise",
+        "profile": "Profil",
+        "home": "Maison",
+        "dashboard": "Tableau de bord",
+        "grid": "Grille",
+        "form": "Formulaire"
+    }
+}

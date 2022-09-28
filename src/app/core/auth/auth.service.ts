@@ -20,7 +20,7 @@ export class AuthService {
   }
 
   redirectUser() {
-    return this.router.navigate(['private']);
+    return this.router.navigate(['app']);
   }
 
   addPrivateModule() {

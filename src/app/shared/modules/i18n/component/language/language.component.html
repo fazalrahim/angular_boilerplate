@@ -1,0 +1,8 @@
+<div class="col-12">
+    <select #langSelect class="form-control pointer" (change)="onChangeISOCode(langSelect.value)">
+        <option *ngFor="let lang of translateService.getLangs()" [value]="lang"
+            [selected]="lang === translateService.currentLang">
+            <span *ngIf="lang === 'en'" value="en">English</span>
+            <span *ngIf="lang === 'fr'" value="fr">French</span>
+    </select>
+</div>

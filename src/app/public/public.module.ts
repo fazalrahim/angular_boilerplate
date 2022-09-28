@@ -20,10 +20,8 @@ import { PublicSharedModule } from '@app/shared/public-modules/public-shared.mod
     ErrorPageComponent
   ],
   imports: [
-    CommonModule,
     PublicRoutingModule,
-    ReactiveFormsModule,
-    PublicSharedModule  
+    PublicSharedModule
   ]
 })
 export class PublicModule { }

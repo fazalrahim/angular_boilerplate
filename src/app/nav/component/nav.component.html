@@ -1,0 +1,31 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <a class="navbar-brand" [routerLink]="['private', 'profile']" [innerHTML]="'menu.company_logo' | translate"></a>
+        <div class="expand navbar-expand">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['private', 'profile']" routerLinkActive="active"
+                        [innerHTML]="'menu.home' | translate"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['private', 'dashboard']" routerLinkActive="active"
+                        [innerHTML]="'menu.dashboard' | translate"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['private', 'grid']" routerLinkActive="active"
+                        [innerHTML]="'menu.grid' | translate"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['private', 'form']" routerLinkActive="active"
+                        [innerHTML]="'menu.form' | translate"></a>
+                </li>
+                <div class="px-4 pt-2">
+                    <app-language></app-language>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="content pages container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+</div>

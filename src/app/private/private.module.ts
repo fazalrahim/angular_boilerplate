@@ -7,7 +7,6 @@ import { GridPageComponent } from '@app/private/components/grid-page/grid-page.c
 import { ProfileComponent } from '@app/private/components/profile/profile.component';
 import { FormPageComponent } from '@app/private/components/form-page/form-page.component';
 
-
 @NgModule({
   declarations: [
     DashboardComponent,

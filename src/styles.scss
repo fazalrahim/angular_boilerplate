@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/shared/scss/colors.scss';
-
+@import "~bootstrap/dist/css/bootstrap.css";
 
 :root {
   --white: #{$white};
@@ -32,4 +32,8 @@
 .error-msg {
   color: var(--error-msg);
   font-size: .8rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
