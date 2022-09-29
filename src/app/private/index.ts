@@ -1,2 +1,1 @@
-export * from '@app/private/private.module'
-export * from '@app/private/private-routing.module'
+//Exports all services & models in this file

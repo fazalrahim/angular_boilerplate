@@ -1,3 +1,7 @@
+# Owend By
+ Fazal Rahim ~ fazalrahim014@gmail.com
+ Git Hub ~ https://github.com/fazalrahim
+
 # AngularBoilerplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
