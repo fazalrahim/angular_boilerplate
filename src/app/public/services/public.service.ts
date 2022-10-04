@@ -18,7 +18,7 @@ export class PublicService extends BaseService {
   login(loginModal: LoginModal): Observable<any> {
     // return this.post<LoginModal>(PublicEndpoints.loginEndPoint, loginModal);
     const response = new BehaviorSubject<boolean>(false);
-    if (loginModal.username === 'fazal' && loginModal.password === '3') response.next(true);
+    if (loginModal.username === 'fazal' && loginModal.password === 'Admin@123') response.next(true);
     return response;
   }
 

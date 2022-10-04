@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
     loginModal: LoginModal = {} as LoginModal;
     loginForm!: FormGroup;
     isSubmitted: boolean = false;
+    capsOn!: boolean;
 
     constructor(
         private router: Router,
@@ -29,8 +30,8 @@ export class LoginComponent implements OnInit {
 
     bindForm() {
         this.loginForm = new FormGroup({
-            username: new FormControl('', [Validators.required, Validators.minLength(4)]),
-            password: new FormControl('', [Validators.required])
+            username: new FormControl('fazal', [Validators.required, Validators.minLength(4)]),
+            password: new FormControl('Admin@123', [Validators.required])
         });
     }
 
@@ -47,6 +48,7 @@ export class LoginComponent implements OnInit {
         this.loginModal = { ...this.loginModal, ...this.loginForm.value };
         this.publicService.login(this.loginModal).subscribe(
             (response: boolean) => {
+                if (!response) return alert('username / password is incorrect');
                 this.authService.setAuthService(response);
                 this.authService.redirectUser();
             },

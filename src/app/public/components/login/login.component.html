@@ -12,8 +12,8 @@
                 </div>
             </div>
         </div>
-        <div>
-            <label for="psw"><b>Password</b></label>
+        <div (appCapsLock)="capsOn=$event">
+            <label for="psw"><b>Password</b><span *ngIf="capsOn"> Caps Lock is on</span></label>
             <input type="password" placeholder="Enter Password" formControlName="password">
             <div *ngIf="password.invalid && (password.dirty || password.touched || isSubmitted)" class="error-msg">
                 <div *ngIf="password.errors?.['required']">
