@@ -10,7 +10,7 @@ import { LoginModal } from '@app/public';
   providedIn: 'root'
 })
 export class PublicService extends BaseService {
-
+  
   constructor(httpClient: HttpClient) {
     super(httpClient);
   }

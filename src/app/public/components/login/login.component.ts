@@ -10,6 +10,7 @@ import { ErrorPageComponent } from '@app/public/components/error-page/error-page
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss']
 })
+
 export class LoginComponent implements OnInit {
 
     loginModal: LoginModal = {} as LoginModal;
@@ -25,6 +26,9 @@ export class LoginComponent implements OnInit {
 
     ngOnInit(): void {
         this.bindForm();
+        /**
+         * temp calling
+         */
         this.getCoinPrice();
     }
 
